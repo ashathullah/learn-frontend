@@ -1,0 +1,50 @@
+body {
+    font-family: 'open sans', sans-serif;
+    color: rgb(56, 55, 55);
+    margin: 200px,0px,200px,0px;
+    padding-top: 5%;
+    padding-left: 475px;
+    background-color: teal;
+}
+
+form {
+    padding-top: 5px;
+    padding-left: 60px;
+    height : 350px;
+    width : 350px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button {
+    background-color: rgb(4, 165, 103);
+    color:white;
+    width: 120px;
+    margin-left: 75px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+
+}
+
+a {
+  color: crimson;
+  font-size: 14px;
+  
+}
+
+.bar {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(231, 230, 226);
+}
+
+h3 {
+    margin-left: 90px;
+}
+
+.link {
+    margin-left: 80px;
+}
