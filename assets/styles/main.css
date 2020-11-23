@@ -3,16 +3,20 @@ body {
     padding: 0;
 }
 
-#main {
-    background-image: url("C:/Users/ashat/projects/learn-frontend/04_website/backgroundimg1.jpg");
-    position: absolute;
+.main {
+    background-image: url("../images/cityscape_backgroundimg1.jpg");
     width: 100%;
-    height:100%;
+    height: 100%;
+    padding-bottom: 100px;
 }
 
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
 .top {
     background-color: white;
-    float: none;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -30,6 +34,7 @@ body {
 
 #contact {
     float: right;
+    margin-top: 36px;
 }
 #contact ul {
     list-style-type: none;
@@ -38,7 +43,7 @@ body {
 #contact li {
     float: right;
     background-color: black;
-    padding: 40px 20px 40px 20px;
+    padding: 20px;
 }
 
 #contact li a {
@@ -49,15 +54,40 @@ nav {
     float: right;
 }
 
-#middle {
-    text-align: center;
+
+/* navigatioon */
+
+.navbar {
+    margin-top: 10px;
+    margin-right:20px;
+    padding: 0;
+    background: transparent;
 }
+.navbar .btn-outline-success{
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+    color: rgb(249, 252, 247);
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #519f2f;
+    opacity: 0.9;
+}
+
+.middle {
+    text-align: center;
+    color: black;
+    margin-top: 200px;
+}
+
 /* Button Styles */
 .btn-primary {
     background: #65B144;
     border-color: #65B144;
     border-radius: 0;
     margin: auto;
+    padding: 10px 20px;
 }
 
 .btn-primary:hover {
@@ -65,19 +95,254 @@ nav {
     border-color: #519f2f;
 }
 
-/* navigatioon */
+#sub {
+    background-color: white;
+    padding: 100px;
+    margin-bottom: 300px;
+}
 
-.navbar {
+.text {
+    float: left;
+}
+
+#sub h2{
+    color: #65B144;
+}
+
+#sub p {
+    margin-left: 60px;
+    width: 350px;
+}
+
+.text .btn-primary {
+    margin-left: 60px;
+}
+
+#sub img {
     float: right;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-}
-.navbar .btn-outline-success{
-    border-radius: 0;
-    border: 0;
+    padding: 10px;
+    height: 340px;
+    width: 300px;   
 }
 
-.navbar .btn-outline-success:hover {
-    background-color: #519f2f;
+/* next part */
+.part2 {
+    background-image: url("../images/img3.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    background-color: white;
+    float: left;
+    width: 150px;
+}
+
+
+section p, section h3 {
+    padding: 10px;
+}
+
+#section1 {
+    background-color: #65B144;
+    margin: 10px;
+    width: 150px;
+}
+
+#section2 {
+    background-color: rgb(255, 36, 36);
+    margin: 10px;
+}
+
+#section3 {
+    background-color: rgb(50, 245, 147);
+    margin: 10px;
+}
+
+section img {
+    width: 150px;
+    height: 140px;
+}
+
+#shortnote {
+    float: right;
+    margin-top: 150px;
+    margin-right: 250px;
+    color: white;
+    width: 300px;
+}
+
+.grid-container1 {
+    display : inline-grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    background-color: white;
+}
+
+.grid-container1 .grid-item {
+    display: inline;
+    margin: 40px;
+    padding: 10px;
+}
+
+.grid-container1 .grid-item img {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.grid-container2, .grid-container3 {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+
+.grid-container2 .grid-item, .grid-container3 .grid-item{
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.grid-container3 {
+    background-color: white;
+}
+
+.grid-container2 .grid-item:hover, .grid-container3 .grid-item:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+.grid-container2 img, .grid-container3 img {
+    height: 100px;
+    width: 100px;
+}
+.foot .navigation {
+    margin: 60px;
+    float: left;
+}
+.foot .navigation ul{
+    list-style-type: none;
+    background-color: transparent;
+    color: white;
+}
+
+.foot .navigation ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot .navigation li a:hover {
+    color: #65B144;
+}
+
+
+.foot .photo-gallery {
+    margin-top: 60px;
+    margin-left: 40px;
+    float: left;
+}
+.foot .photo-gallery h4{
+    color: white;
+    padding-left: 10px;
+
+}
+
+.foot .grid-container{
+    padding: 10px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto
+}
+
+.foot .grid-container .grid-item img{
+    height: 75px;
+    width: 100px;
+    padding: 5px;
+}
+
+.foot .grid-container .grid-item img:hover{
+    opacity: 0.5;
+}
+
+.bottem-contact {
+    display: inline;
+    float: left;
+}
+
+.enquiry {
+    float: left;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.enquiry h4 {
+    padding-bottom: 10px;
+}
+.enquiry .eform {
+    width: 300px;
+}
+
+.enquiry {
+    padding: 10px;
+    text-align: left;
+}
+
+.eform input {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: white;
+    width: 100%;
+    color: gray;
+    padding: 10px;
+}
+
+.eform div {
+    padding: 5px;
+}
+
+.bottem-contact {
+    margin-top: 65px;
+    margin-left: 40px;
+    color: white;
+}
+.bottem-contact p {
+    margin-left: 20px;
+}
+.bottem-contact ul {
+    color: white;
+    padding: 0;
+    width: 250px;
+}
+.bottem-contact img {
+    border-radius: 100%;
+    padding: 2px;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    float: left;
+}
+
+.bottem-contact li {
+    list-style-type: none;
+}
+
+footer {
+    margin: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+footer .imagelinks {
+    float: right;
+}
+footer img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+footer a:hover {
+    opacity: 0.5;
 }

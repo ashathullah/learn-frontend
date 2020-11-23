@@ -1,0 +1,37 @@
+/* helper styles */
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.app-header {
+   background: #666;
+}
+
+.brand {
+    float: left;
+}
+
+.app-navbar {
+    float: right;
+}
+
+.main-content {
+    clear: both;
+}
+
+.btn {
+    background-color: #666;
+    border: none;
+    color: #fff;
+}
+.btn-primary {
+    background-color: blue;
+}
+
+.btn-icon-info:after  {
+    display: inline-block;
+    content: 'i';
+    margin-left: 10px;
+}
