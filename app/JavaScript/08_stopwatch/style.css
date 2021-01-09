@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    background: wheat;
+    color: #999;
+}
+
+.number {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#counts {
+    padding-top: 75px;
+}
+
+.controls {
+    background-color: #f88b7c;
+    position: relative;
+    top: 22%;
+    text-align: center;
+}
+
+.controls button {
+    padding: 5px 10px;
+    margin: 10px;
+}
